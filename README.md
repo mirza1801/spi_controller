@@ -1,11 +1,32 @@
-# SPI Controller (SystemVerilog)
+# 🧩 SPI Controller (SystemVerilog)
 
-APB-to-SPI controller (`spi_ctrl.sv`) with a deterministic testbench (`tb_spi_ctrl.sv`).
-Builds with Synopsys VCS; dumps VPD (DVE) + VCD.
+An **APB-to-SPI Controller** implemented in **SystemVerilog** with a deterministic **testbench** for functional verification using **Synopsys VCS**.  
+The design demonstrates register-mapped communication between a processor-like APB interface and an SPI master module.
 
-## Run
+---
+
+## 🏗️ Design Overview
+| Module | Description |
+|---------|-------------|
+| `spi_ctrl.sv` | Implements the APB interface and SPI finite-state machine (FSM). Handles address/data loading, chip-select control, and transfer sequencing. |
+| `tb_spi_ctrl.sv` | Testbench that drives APB transactions, instantiates a simple SPI slave model, and verifies four transfers (two writes + two reads). |
+
+**Key features**
+- Parameterized address & data width  
+- LSB-first SPI shifting  
+- Interrupt pulse after each transaction batch  
+- Deterministic, self-checking testbench (no manual waveform inspection required)
+
+---
+
+## ⚙️ Environment
+- **Simulator:** Synopsys VCS  
+- **Waveform Viewer:** DVE (VPD) or GTKWave (VCD)  
+- **Language:** SystemVerilog (IEEE 1800-2017)  
+- **Platform:** Linux / Windows WSL / MobaXterm  
+
+---
+
+## ▶️ How to Build & Run
 ```bash
 make run
-
-make waves
-

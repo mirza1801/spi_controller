@@ -30,3 +30,16 @@ The design demonstrates register-mapped communication between a processor-like A
 ## ▶️ How to Build & Run
 ```bash
 make run
+
+---
+
+## 📊 Simulation Log
+[View full log file](docs/spi_ctrl_tb.log)
+
+---
+
+## 🔍 Waveform Screenshot
+Captured from Synopsys DVE after successful simulation:
+
+![SPI Waveform](docs/spi_waveform.png)
+

@@ -12,5 +12,3 @@ run: compile
 waves:
 	@dve -vpd spi_ctrl_tb.vpd &
 
-clean:
-	@rm -rf csrc simv simv.daidir ucli.key *.vpd *.vcd *.log DVEfiles *.dsn novas* vc_hdrs.h

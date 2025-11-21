@@ -31,5 +31,18 @@ This project demonstrates register-mapped communication between a processor-like
 | **Platform** | Linux / Windows (MobaXterm or Git Bash) |
 
 ---
+### ▶️ How to Build & Run
+
+```bash
+# Compile and run with Synopsys VCS
+vcs -sverilog -full64 -debug_access+all -timescale=1ns/1ps spi_ctrl.sv testbench.sv -top tb -o simv
+./simv -no_save | tee sim.log
+
+# (Optional) open the waveform
+dve -vpd waves.vpd &
+
+# Or if you use Icarus Verilog instead:
+# iverilog -g2012 -o spi_ctrl_tb spi_ctrl.sv testbench.sv
+# vvp spi_ctrl_tb
 
 

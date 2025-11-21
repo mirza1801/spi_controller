@@ -32,7 +32,4 @@ This project demonstrates register-mapped communication between a processor-like
 
 ---
 
-## ▶️ How to Build & Run
 
-```bash
-make run

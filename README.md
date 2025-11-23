@@ -1,11 +1,11 @@
-# 🧩 SPI Controller (SystemVerilog)
+#SPI Controller (SystemVerilog)
 
 An **APB-to-SPI Controller** implemented in **SystemVerilog** with a deterministic **testbench** for functional verification using **Synopsys VCS**.  
 This project demonstrates register-mapped communication between a processor-like **APB interface** and an **SPI master** controller.
 
 ---
 
-## 🏗️ Design Overview
+## Design Overview
 
 | Module | Description |
 |---------|-------------|
@@ -21,7 +21,7 @@ This project demonstrates register-mapped communication between a processor-like
 
 ---
 
-## ⚙️ Environment and Tools
+## Environment and Tools
 
 | Tool | Version / Purpose |
 |------|-------------------|
@@ -31,7 +31,7 @@ This project demonstrates register-mapped communication between a processor-like
 | **Platform** | Linux / Windows (MobaXterm or Git Bash) |
 
 ---
-### ▶️ How to Build & Run
+### How to Build & Run
 
 ```bash
 # Compile and run with Synopsys VCS
